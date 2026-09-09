@@ -1,0 +1,241 @@
+[
+  {
+    "id": 1,
+    "title-en": "UCB (subsidiary) Mobile Banking",
+    "subtitle-en": "Banking in Motion: Designing for Cambodia",
+    "title-ch": "UCB (子行) 行動銀行",
+    "subtitle-ch": "行銀設計：打造符合柬埔寨需求的金融體驗",
+    "introduction-en": "With rapid economic growth and increasing demand of banking services in Cambodia, our team started to devolop the mobile banking application from the ground up. We keep optimizing digital financial services to enhance reach and engagement in order to boost local financial services and build a business foundation for the subsidiary since 2018.",
+    "introduction-ch": "隨著柬埔寨經濟快速發展，行動銀行需求大幅提升。本專案為UCB(銀行子行)打造在地化數位金融服務，自2018年由團隊從零建置，持續迭代功能與體驗，提升用戶觸及率與黏著度。",
+    "role-en": ["User researcher", "UI designer", "Interaction designer"],
+    "role-ch": ["使用者研究", "wireframe規劃設計", "UI設計", "網頁開發"],
+    "tool": ["Figma", "Sketch", "NPS", "KANO analysis", "HTML", "CSS", "JQuery"]
+  },
+  {
+    "id": 2,
+    "content-ch": [
+      {
+        "image": "ucb0.png"
+      },
+      {
+        "title": "負責內容",
+        "content": [
+          "1. 2019｜UI 設計：延續既有風格，針對新功能提出設計解法",
+          "2. 2023｜UX 規劃：負責 Wireframe 與流程設計、重新梳理核心體驗",
+          "3. 建立設計規範 Library，並將工具從 Sketch 轉換為 Figma",
+          "4. 整合翻譯詞彙表、設計多語系介面（柬文、英文、中文）",
+          "5. 跨部門協作：與 PM、IT、BA 及柬國主管機關協作",
+          "6. 2024｜執行使用者研究：NPS、KANO 分析、易用性測試"
+        ]
+      },
+
+      {
+        "highlight-title": "專案成效",
+        "highlight-content": [
+          "流程效能提升：導入 Figma 促進跨部門協作與即時設計溝通",
+          "系統化設計管理：建立設計系統與元件庫，整理 UI 元件與規範，提升接手效率並降低交接風險",
+          "用戶滿意度提升：自 2019 年起 NPS 淨推薦值穩定成長",
+          "更貼近在地需求：翻譯標準化與文化語境調整，提升理解與好感度。",
+          "數據導向決策：導入 KANO 模型提升需求優先度決策效率，降低試錯成本。"
+        ]
+      },
+      {
+        "image": "ucb1.png",
+        "imageWord": "Wireframe設計階段(第三方支付)"
+      },
+      {
+        "image": "ucb2.png",
+        "imageWord": "Mockup設計階段(房貸)：柬埔寨國旗為深藍色底，App使用深藍為主題，搭配主要顏色為玉山銀行的企業色。"
+      },
+      {
+        "title": "專案重點與挑戰",
+        "subtitle": "-語言與排版的挑戰",
+        "content": [
+          "柬埔寨國人主要使用語言有三種，App必須皆支援；因此在設計的時候，需要盡量保持介面上的彈性，不去限制文字區塊的寬度，方能載入三種語言時，在介面上完整顯示。"
+        ],
+        "image": "ucb10.png"
+      },
+      {
+        "highlight-title": "支援多語系App設計要點",
+        "highlight-content": [
+          "避免文字區塊限制寬度，確保不同語言皆能良好呈現",
+          "建立翻譯對照表，標準化、一致化 Wording 並提升溝通效率"
+        ]
+      },
+      {
+        "subtitle": "-用語的文化差異",
+        "content": [
+          "初期使用 Transfer-in/out Account等銀行常用術語，易用性測試後改為當地更習慣的 From/To Account，提升用語親和力，此後新功能的翻譯皆與當地人討論用語，提升認同感與理解度"
+        ],
+        "image": "ucb9.png"
+      },
+      {
+        "subtitle": "-維護設計一致性",
+        "content": [
+          "此專案為大型維運專案，歷時長久，團隊成員人事變動頻繁，App經手許多設計師以及工程師，導致前後期產品元素及想法因人而異。為達成一致性，團隊決議轉換工具，由Sketch改為Figma，整理App設計規範，建立Components & Library，以確保未來接手之設計師有規範可遵循。"
+        ],
+        "image": "ucb3.png",
+        "imageWord": "於 Figma 建立設計規範與元件 Library"
+      },
+      {
+        "video": "ucb4.mp4",
+        "imageWord": "製作設計規範網站，協助前端工程師對齊設計細節"
+      },
+      {
+        "subtitle": "-使用習慣 vs 設計趨勢",
+        "content": [
+          "東南亞用戶偏好「九宮格首頁」，與台灣常見個人化首頁不同，2023年團隊根據市場觀察調整為九宮格首頁，並追蹤競品設計走向。"
+        ],
+        "image": "ucb5.png",
+        "imageWord": "UCB 手機銀行的首頁設計經過不斷演進，逐步對齊我們對當地用戶習慣與偏好的觀察。"
+      },
+      {
+        "content": [
+          "2023年底出現戲劇化的反轉：競品後續改版，反而往個人化首頁發展"
+        ],
+        "image": "ucb6.png",
+        "imageWord": "2023 年，當地主要競品大改版，明顯趨向個人化首頁設計。"
+      },
+      {
+        "highlight-title": "產品策略的選擇與思考",
+        "highlight-content": [
+          "設計該「迎合」當地習慣，或「引導」行為改變？",
+          "每項決策前，若能先透過訪談/問卷/數據了解真實需求，將能引導產品邁向更符合期待的發展方向。"
+        ]
+      },
+      {
+        "content": [
+          "此後，針對 BA 團隊提出的需求，我們會盡可能尋找相關數據進行分析，協助釐清背後的實際問題，以驗證需求的真實性與合理性。"
+        ],
+        "image": "ucb8.png",
+        "imageWord": "詳細資訊頁面改版的建議項目"
+      },
+      {
+        "title": "專案反思",
+        "subtitle": "-文化距離與同理",
+        "content": [
+          "由於目標族群與我們有很大的文化差異，本案讓我意識到設計思維不能以自身經驗為中心，需深入觀察在地使用習慣並反覆驗證假設。未來若能在初期就投入更多使用者研究資源，將能更有效掌握市場趨勢與真實需求，打造更貼近人心的產品體驗。"
+        ]
+      },
+      {
+        "subtitle": "-導入使用者研究分析需求",
+        "content": [
+          "因應本次「九宮格設計」專案的使用回饋，以及過往部分功能使用率偏低的經驗，團隊決議每年定期導入 KANO 分析，作為需求優先順序的客觀依據，協助業務單位聚焦關鍵功能，避免資源與時間浪費在低效開發上。"
+        ]
+      }
+    ],
+    "content-en": [
+      {
+        "image": "ucb0.png"
+      },
+      {
+        "title": "Responsibilities",
+        "content2": [
+          "UI Design (since 2019): Extended existing design style and created new solutions to upcoming features.",
+          "UX Design (since 2023): Led wireframe and user-flow redesign to improve the overall user experience.",
+          "Maintained a design system and transferred the workflow from Sketch to Figma.",
+          "Designed interfaces for several locale (Khmer, English, Chinese) and maintained localization glossaries.",
+          "Collaborated across departments — working closely with PMs, ITs, BAs, and Cambodian authorities.",
+          "User Research (2024): Conducted NPS, KANO analysis, and usability testing."
+        ]
+      },
+      {
+        "highlight-title": "Achievement",
+        "highlight-content": [
+          "Transitioned from Sketch to Figma, improving team collaboration with real-time co-editing and faster communication.",
+          "Built a design system to re-organize the guideline and UI kits, reducing onboarding time and maintenance cost.",
+          "NPS scores had steadily increased since 2019, reflecting higher customer satisfaction and better user experience.",
+          "Improved localization by standardizing terms and design, creating culturally relevant interfaces to cater to Cambodian users.",
+          "Integrated research-driven design decisions, reducing trial-and-error costs by using annual KANO analysis to prioritize features based on actual needs."
+        ]
+      },
+      {
+        "image": "ucb1.png",
+        "imageWord": "Wireframe: the third-party payment"
+      },
+
+      {
+        "image": "ucb2.png",
+        "imageWord": "Mockup design (home loan): we used a deep blue theme from Cambodian national flag in the app, blending E.SUN Bank’s brand colors - green."
+      },
+      {
+        "title": "Highlights & Challenges",
+        "subtitle": "Language & Layout Flexibility",
+        "content": [
+          "Cambodian users primarily use three languages. The app had to support all of them. Therefore, the design should be as flexible as possible, avoiding fixed text block widths, to ensure proper display for three different languages."
+        ],
+        "image": "ucb10.png"
+      },
+      {
+        "highlight-title": "Some tips for supporting multiple languages",
+        "highlight-content": [
+          "Avoided fixed text box widths to allow for flexible rendering across languages.",
+          "Kept localization glossaries to streamline wording and improve communication efficiency."
+        ]
+      },
+      {
+        "subtitle": "Adapting terms based on cultural differences",
+        "content": [
+          "Replaced banking jargon like “Transfer-in/out Account” with more user-friendly terms like “From/To Account” after usability testing. After that, we always discused with local Cambodians to refine translations and enhance clarity and familiarity."
+        ],
+        "image": "ucb9.png"
+      },
+
+      {
+        "subtitle": "Unifying the design system",
+        "content": [
+          "Due to the project being a long-term commitment and frequent staff shifts whthin the team, inconsistencies in design approaches arose, resulting in several issues__.",
+          "To keep the approaches consistency, I decided to switch the development tools from Sketch to Figma, organize the App design guidelines, and establish Components & Library to ensure that future designers have guidelines to follow."
+        ],
+        "image": "ucb3.png",
+        "imageWord": "Organized design guidelines and built a component library in Figma"
+      },
+      {
+        "video": "ucb4.mp4",
+        "imageWord": "Built a design spec webpage for developers to follow."
+      },
+      {
+        "subtitle": "User Habits vs. Design Trends",
+        "content": [
+          "Users in Southeast Asia prefer a 3x3 grid homepage, contrasting with a personalized dashboard common in Taiwan. In 2023, we redesigned the homepage using this layout based on local preferences and competitor researches."
+        ],
+        "image": "ucb5.png",
+        "imageWord": "The UCB Mobile Banking homepage has evolved over time, increasingly aligning with our understanding of local user behavior and trends."
+      },
+      {
+        "content": [
+          "We observed that, however, competitors were shifting towards personalization."
+        ],
+        "image": "ucb6.png",
+        "imageWord": "Major competitors in the local market revamped their homepages in 2023, shifting toward personalization."
+      },
+      {
+        "highlight-title": "Reconsider",
+        "highlight-content": [
+          "Whether we should adapt to commom user behaviors in Cambodia or follow the mainstream design trends?",
+          "Before making any decision, conducting user research — interviews, surveys or data analysis — can help uncover real needs, allowing the product to move in a direction that truly meets user expectations."
+        ]
+      },
+      {
+        "content": [
+          "After that, for requirements from the BA team, we look for relevant data to analyze and validate the authenticity and rationale behind them."
+        ],
+        "image": "ucb7.png",
+        "imageWord": "Detail Page Redesign Recommendations"
+      },
+      {
+        "title": "Reflections",
+        "subtitle": "Addressing Cultural Differences",
+        "content": [
+          "Due to the significant cultural differences between Cambodia and Taiwan, this experience helped me step away from personal bias and try to design from an user’s perspective. During the design process, user interviews and usability testing allowed our team to validate assumptions. It made me realize the importance of conducting early-stage preliminary user researches to better align the real needs and behaviors."
+        ]
+      },
+      {
+        "subtitle": "Data-Informed Feature Prioritization",
+        "content": [
+          "Based on feedback on the homepage redesign and the underutilization of some standing functions, I suggested that our team implement annual KANO analysis. This helps the business team focus on high-impact features and avoid wasting development time and resources."
+        ]
+      }
+    ]
+  }
+]

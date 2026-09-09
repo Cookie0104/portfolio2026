@@ -1,0 +1,473 @@
+$primary-color: #86b6ff;
+$secondary-color: #f2ede2;
+$hover-color: #b7d2ff;
+$accent-color: #e8a33d;
+$accent-deep: #c98325;
+$background-color: #14161d;
+$white: #1c2029;
+
+$primary-font-size: 20px;
+$content-font-size: 16px;
+$small-font-size: 14px;
+
+// A "designed" divider reads differently from the faint staff-line texture
+// behind it: a slightly brighter hairline plus a whisper of warm glow
+// sitting right against it (not just a plain flat rule).
+@mixin designed-divider($side: top) {
+  @if $side == top {
+    border-top: 1px solid rgba(242, 237, 226, 0.16);
+    box-shadow: 0 -1px 0 rgba(232, 163, 61, 0.12);
+  } @else {
+    border-bottom: 1px solid rgba(242, 237, 226, 0.16);
+    box-shadow: 0 1px 0 rgba(232, 163, 61, 0.12);
+  }
+}
+
+.resumeOuter {
+  min-height: calc(100vh - 65px);
+  width: 100%;
+  padding: 48px 0px 100px;
+  animation: page-fade-in 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.resumeInner {
+  width: 86%;
+  max-width: calc(1160px - 80px);
+  margin: 0px auto;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 28px;
+}
+
+.pageTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(242, 237, 226, 0.3);
+  letter-spacing: 0.03em;
+}
+
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: $accent-color;
+  color: $background-color;
+  font-weight: 700;
+  font-size: $small-font-size;
+  letter-spacing: 0.05em;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s ease,
+    box-shadow 0.2s ease;
+
+  img {
+    height: 14px;
+  }
+
+  &:hover {
+    background: $accent-deep;
+    // transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(232, 163, 61, 0.35);
+  }
+}
+
+.layout {
+  display: flex;
+  gap: 56px;
+  align-items: flex-start;
+}
+
+// ---------- Sidebar ----------
+
+.sidebar {
+  width: 260px;
+  flex: 0 0 260px;
+  position: sticky;
+  top: 88px;
+  background: $white;
+  border: 1px solid rgba(242, 237, 226, 0.1);
+  border-radius: 14px;
+  padding: 28px 24px;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.3);
+}
+
+.badge {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1.5px solid $accent-color;
+  box-shadow: 0 0 0 4px rgba(232, 163, 61, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: $accent-color;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 700;
+  color: $secondary-color;
+  letter-spacing: 0.02em;
+}
+
+.roleLine {
+  font-size: $content-font-size;
+  color: rgba(242, 237, 226, 0.7);
+  margin-top: 4px;
+}
+
+.years {
+  font-size: $small-font-size;
+  color: rgba(242, 237, 226, 0.4);
+  margin-top: 2px;
+}
+
+.tagStack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.sideTag {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(242, 237, 226, 0.65);
+  padding-left: 12px;
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    left: 0px;
+    top: 6px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $accent-color;
+  }
+}
+
+.sidebarDivider {
+  @include designed-divider(top);
+  margin: 22px 0px;
+}
+
+.sideSectionLabel {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $accent-color;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.skillBlock {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.skillCategory {
+  color: $secondary-color;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-size: 12px;
+  color: rgba(242, 237, 226, 0.6);
+  border: 1px dashed rgba(242, 237, 226, 0.25);
+  border-radius: 14px;
+  padding: 3px 10px;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.25s ease,
+    border-color 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: scale(1.005);
+    color: $accent-color;
+    border-color: $accent-color;
+    border-style: solid;
+    box-shadow: 0 4px 14px rgba(232, 163, 61, 0.1);
+  }
+}
+
+// ---------- Main column ----------
+
+.main {
+  flex-grow: 1;
+  min-width: 0px;
+}
+
+.section {
+  margin-bottom: 52px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $secondary-color;
+  font-weight: 700;
+  margin-bottom: 20px;
+  @include designed-divider(bottom);
+  padding-bottom: 14px;
+}
+
+.sectionIndex {
+  color: $accent-color;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: $content-font-size;
+  line-height: 30px;
+  color: rgba(242, 237, 226, 0.75);
+  margin: 0px 0px 16px 0px;
+  max-width: 640px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.timeline {
+  position: relative;
+  padding-left: 24px;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    left: 4px;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: linear-gradient(
+      to bottom,
+      rgba(232, 163, 61, 0.5),
+      rgba(232, 163, 61, 0.08)
+    );
+  }
+}
+
+.timelineItem {
+  position: relative;
+  padding-bottom: 40px;
+
+  &:last-child {
+    padding-bottom: 0px;
+  }
+}
+
+.timelineDot {
+  position: absolute;
+  left: -24px;
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: $accent-color;
+  box-shadow: 0 0 0 4px rgba(232, 163, 61, 0.15);
+}
+
+.expHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.expCompany {
+  font-size: 18px;
+  font-weight: 700;
+  color: $secondary-color;
+}
+
+.expRole {
+  font-size: $small-font-size;
+  color: $accent-color;
+  margin-top: 2px;
+}
+
+.expPeriod {
+  font-size: $small-font-size;
+  color: rgba(242, 237, 226, 0.4);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.liveDot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: $accent-color;
+  box-shadow: 0 0 0 0 rgba(232, 163, 61, 0.6);
+  animation: live-pulse 1.8s ease-out infinite;
+}
+
+@keyframes live-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(232, 163, 61, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(232, 163, 61, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(232, 163, 61, 0);
+  }
+}
+
+.bulletList {
+  margin: 0px;
+  padding: 0px 0px 0px 20px;
+  list-style-type: disc;
+  max-width: 680px;
+
+  li {
+    font-size: $content-font-size;
+    line-height: 28px;
+    color: rgba(242, 237, 226, 0.72);
+    margin-bottom: 10px;
+
+    &::marker {
+      color: $accent-color;
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.projectsRow {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px dashed rgba(242, 237, 226, 0.12);
+}
+
+.projectsLabel {
+  display: block;
+  font-size: $small-font-size;
+  color: rgba(242, 237, 226, 0.4);
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.awardList {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  max-width: 680px;
+
+  li {
+    position: relative;
+    font-size: $content-font-size;
+    line-height: 28px;
+    color: rgba(242, 237, 226, 0.75);
+    padding: 12px 0px 12px 24px;
+    @include designed-divider(top);
+
+    &::before {
+      content: "\2605";
+      position: absolute;
+      left: 0px;
+      top: 12px;
+      color: $accent-color;
+      font-size: 13px;
+      width: 0px;
+      height: 0px;
+    }
+
+    &:first-child {
+      border-top: 0px;
+      box-shadow: none;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .sidebar {
+    width: calc(100% - 48px);
+    flex: none;
+    position: static;
+  }
+}
+
+@media (max-width: 799px) {
+  .resumeInner {
+    width: calc(100% - 48px);
+  }
+  .pageTitle {
+    font-size: 26px;
+  }
+  .sidebar {
+    padding: 24px 20px;
+  }
+  .badge {
+    width: 48px;
+    height: 48px;
+    font-size: 17px;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .timeline {
+    padding-left: 20px;
+  }
+  .expHeader {
+    flex-direction: column;
+  }
+  .expCompany {
+    font-size: 17px;
+  }
+}

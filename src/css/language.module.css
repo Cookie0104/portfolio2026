@@ -1,0 +1,68 @@
+.languageListOuter {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  background: #fafafa;
+  width: 121px;
+  padding: 4px 0px;
+  border-radius: 8px;
+  border: 1px solid #577eb5;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease, border-radius 0.5s ease;
+}
+.languageListOuter.active {
+  max-height: 100px;
+  opacity: 1;
+}
+.languageListOuter div {
+  font-size: 16px;
+  line-height: 40px;
+  width: calc(100% - 32px);
+  padding: 0px 16px;
+  letter-spacing: 0.05em;
+}
+.languageListOuter div:hover {
+  background: #577eb5;
+  color: #fafafa;
+}
+.languageListOuter div:nth-child(1) {
+  border-bottom: 1px solid #ededed;
+}
+
+.mask {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: -61px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 300;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.mask .languageListOuter2 {
+  background: #fafafa;
+  width: 240px;
+  padding: 16px 0px;
+  border-radius: 8px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid #577eb5;
+}
+.mask .languageListOuter2 div {
+  font-size: 16px;
+  line-height: 48px;
+  width: calc(100% - 32px);
+  padding: 0px 16px;
+  letter-spacing: 0.05em;
+}
+.mask .languageListOuter2 div:hover {
+  background: #577eb5;
+  color: #fafafa;
+}
+.mask .languageListOuter2 div:nth-child(1) {
+  border-bottom: 1px solid #ededed;
+}/*# sourceMappingURL=language.module.css.map */

@@ -1,0 +1,180 @@
+{
+  "name": "Min An",
+  "role-en": "Senior UI/UX Designer",
+  "role-ch": "Senior UI/UX Designer",
+  "years-en": "6+ Years of Experience",
+  "years-ch": "6+年經驗",
+  "tags-en": [
+    "Focused on user journey optimization",
+    "Design System",
+    "Proficient in prototyping, mobile & web design",
+    "Cross-platform design & validation"
+  ],
+  "tags-ch": [
+    "使用者旅程優化",
+    "Design System 建置",
+    "精通 Prototyping, Mobile & Web",
+    "跨平台設計與驗證"
+  ],
+  "summary-en": [
+    "Senior UI/UX Designer with 5+ years of experience specializing in complex financial products and cross-border product development. Equipped with front-end technical skills, I champion DesignOps practices by building standardized Design Systems that improve cross-team collaboration efficiency.",
+    "My core strength lies in end-to-end UX research and UI execution — using NPS, Kano models, and GA insights to define requirements, and applying service blueprints to untangle complex online-to-offline experiences. I have led WCAG accessibility optimizations and B2B/B2C SaaS platform redesigns, driving key decisions through usability testing.",
+    "I see myself as more than a designer — I'm an advocate for product value. I've hold multiple Design workshops that improved cross-team collaboration efficiency by 30%. I stay data-driven to ensure every design decision solves a real user pain point while delivering measurable business value and conversion growth."
+  ],
+  "summary-ch": [
+    "擁有 6 年以上 UI/UX 設計經驗，過去專注於高複雜度的金融產品設計與跨國合作開發。具備前端框架技術能力，擅長透過建立標準化 Design System 提升跨部門協作效率，實踐 DesignOps 精神。",
+    "核心優勢在於能夠一併執行 UX 研究與 UI 設計：擅長運用 NPS、Kano 模型及 GA 數據洞察定義需求，並能操作服務藍圖梳理線上線下複雜體驗。曾主導 WCAG 無障礙系統優化及 B2B/B2C SaaS 平台重構，並透過易用性測試找出關鍵優化決策。",
+    "我不僅是一位設計師，更是產品價值的推動者。曾舉辦多場 UIUX Workshop，促進跨部門合作效率成長 30%。未來期許為致力於以數據為核心，確保每一項設計決策都能為使用者解決痛點，並為企業創造實質的商業價值與轉換率提升。"
+  ],
+  "skills": [
+    {
+      "category-en": "UIUX",
+      "category-ch": "UIUX",
+      "items": [
+        "Wireframing",
+        "Prototyping",
+        "Mockup",
+        "Visual Design",
+        "Web & Content Design"
+      ]
+    },
+    {
+      "category-en": "Research",
+      "category-ch": "Research",
+      "items": [
+        "Card sorting",
+        "Kano analysis",
+        "Usability testing",
+        "Workshop facilitation",
+        "A/B Testing"
+      ]
+    },
+    {
+      "category-en": "Front-end",
+      "category-ch": "Front-end",
+      "items": [
+        "HTML/CSS/JQuery",
+        "JavaScript (React.js)"
+      ]
+    },
+    {
+      "category-en": "Tools",
+      "category-ch": "工具",
+      "items": [
+        "Figma",
+        "FigJam",
+        "Axure RP",
+        "Premiere",
+        "Photoshop",
+        "Illustrator",
+        "github",
+        "VSCode",
+        "Claude"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "國票綜合證券 IBF Securities",
+      "role": "Senior UI/UX Designer",
+      "period-en": "2026 - Present",
+      "period-ch": "2026 - 至今",
+      "bullets-en": [
+        "UI design and experience optimization for the stock trading mobile app, 任我贏, covering core features such as the dividend hub, price alerts, and profile management.",
+        "Focus on the core user base aged 45–64 with fewer knowledge for financial jargon, continuously refining information architecture and copywriting to lower the barrier to understanding and use.",
+        "Collaborate closely with PMs, business stakeholders, and engineering teams to translate complex financial rules and workflows into clear, understandable interfaces."
+      ],
+      "bullets-ch": [
+        "負責證券商行動交易 App「任我贏」的介面設計與體驗優化，涵蓋股利專區、到價通知、基本資料變更等核心功能。",
+        "聚焦 45–64 歲、對金融術語接受度較低的核心客群，持續優化資訊架構與文案用語，降低操作與理解門檻。",
+        "與 PM、業務單位與工程團隊密切協作，將複雜的金融規則與流程轉譯為清楚易懂的介面體驗。"
+      ],
+      "projects-en": [
+        "Email Template redesign",
+        "Stock price alerts",
+        "Dividend hub design",
+        "Account opening journey optimization"
+      ],
+      "projects-ch": [
+        "公司對外信重新設計",
+        "股價到架通知",
+        "股利專區規劃",
+        "開戶旅程優化"
+      ]
+    },
+    {
+      "company": "玉山商業銀行 E.SUN COMMERCIAL BANK",
+      "role": "UI/UX Designer",
+      "period-en": "2019 - 2025",
+      "period-ch": "2019 - 2025",
+      "bullets-en": [
+        "Uncovered user needs through NPS, Kano analysis, and Google Analytics insights while developing a cross-border product — the UCB Mobile Banking App — collaborating with Cambodian regulators, the development team, project managers, and fellow designers to improve UX, conversion, and satisfaction.",
+        "Iterated and optimized internal systems against WCAG accessibility standards to improve usability for elderly and visually impaired users; built a shared, extensible Figma library to standardize the company's design system, practicing DesignOps to boost cross-team efficiency and ensure consistency across projects.",
+        "Redesigned the recruitment website and streamlined the hiring process across both the candidate-facing SaaS platform (B2C) and the internal HR recruitment backend (B2B), improving the application flow and onboarding experience, and surfacing 8+ key optimizations through usability testing.",
+        "Hosted 5 internal UI/UX talks and workshops (Design Thinking, user journey mapping, card sorting, etc.), raising the organization's awareness of design's value and growing cross-team collaboration by 30%, demonstrating the ability to communicate complex design concepts and drive collaborative outcomes.",
+        "Designed and front-end developed the team's official website to showcase the team's work and the value of design, taking it from design to shipped production."
+      ],
+      "bullets-ch": [
+        "透過 NPS、Kano 分析與 Google Analytics 資料洞察使用者需求，開發跨國產品 - UCB Mobile Banking App，與柬埔寨主管機關、開發團隊、專案經理及其他設計師協作，優化使用者體驗，提升轉換率與使用滿意度。",
+        "依據 WCAG 無障礙設計標準，迭代並優化內部系統，提升長者及視覺障礙使用者的可用性；同時建立可共用並擴充的 Figma Library，將公司設計系統標準化，實踐 DesignOps 精神，提升跨部門合作效率並確保跨專案一致性。",
+        "重新設計招募網站並梳理招募流程，包含應徵者使用的 SaaS 平台（B2C）以及 HR 內部招募後台系統（B2B），優化職缺申請流程與新人入職體驗，並透過易用性測試照出 8+ 項鍵優化建議。",
+        "舉辦 5 場內部 UI/UX 講座與工作坊（Design Thinking、使用者旅程、Card Sorting 等等），增加公司對於設計的重要性，促進跨部門合作成長 30%，展現有效傳達複雜設計概念與推動協作成果的能力。",
+        "為團隊設計官方網站，推廣並介紹團隊工作內容及設計的價值，並製作前端網頁開發切版上線。"
+      ],
+      "projects-en": [
+        "Overseas Subsidiary Mobile Banking",
+        "Smart Teller Kiosk",
+        "New Branch System",
+        "Internal Remittance System",
+        "New Recruitment System",
+        "Team Official Website",
+        "UX Course Design & Instruction",
+        "Onboarding Journey Enhancement",
+        "SME Banking App"
+      ],
+      "projects-ch": [
+        "海外子行行動銀行",
+        "智能系統櫃",
+        "新分行系統",
+        "行內匯款系統",
+        "新甄選系統",
+        "團隊官方網站",
+        "UX 課程規劃與教學",
+        "入職旅程體驗精進",
+        "中小企業App"
+      ]
+    },
+    {
+      "company": "Freelancer",
+      "role": "Graphic Designer / UI/UX Designer",
+      "period-en": "Off-duty",
+      "period-ch": "非正職時間",
+      "bullets-en": [
+        "Contributed UI/UX design for TicketRecipe, a cross-border startup's secondhand ticket resale web platform.",
+        "Planned and designed social media content for Tianliao Biotech Digital Technology Co., Ltd. and its sub-brands, translating complex biotech information into approachable visuals, and independently produced graphic design assets for product promotion, brand identity, and seasonal campaigns.",
+        "Partnered with the 5% Design Action social design platform on a project designing an online-to-offline service system, mapping the service process and service blueprint, and planning the app and website architecture.",
+        "Designed event posters and recruitment materials, and managed social media, for Xiaohonglou Music & Arts Studio."
+      ],
+      "bullets-ch": [
+        "參與跨國(新加坡)新創公司 TicketRecipe 二手票券交易平台 Web 之 UI/UX 設計。",
+        "田寮生技數位科技股份有限公司及其子品牌之社群媒體營運規劃及設計，將複雜的生技資訊轉化為易懂的視覺內容，獨立完成產品推廣、品牌形象、節慶活動等各類平面設計稿件。",
+        "與 5% Design Action 社會設計平台專案合作，設計一項含線上線下的服務系統，梳理服務流程、服務藍圖、規劃 APP 與網站架構設計。",
+        "小紅樓音樂藝術工作室各項活動海報、招生文宣設計，及社群媒體營運。"
+      ],
+      "projects-en": [],
+      "projects-ch": []
+    }
+  ],
+  "awards-en": [
+    "2019 iF Design Talent Award (Germany), Best of the Year (UI/UX)",
+    "2019 Indigo Design Award (Netherlands), Silver (UI/UX)",
+    "2021 The F2E Front-End & UI Challenge (3rd edition), Team Category — Honorable Mention",
+    "2022 The F2E Front-End & UI Challenge (4th edition), Team Category — 1st Place"
+  ],
+  "awards-ch": [
+    "2019 德國 iF 新秀獎 best of the year (UI/UX)",
+    "2019 荷蘭 Indigo Design Award 銀獎 (UI/UX)",
+    "2021 第三屆 The F2E 前端 & UI 修煉精神時光屋 團體組佳作",
+    "2022 第四屆 The F2E 前端 & UI 修煉精神時光屋 團體組第一名"
+  ]
+}

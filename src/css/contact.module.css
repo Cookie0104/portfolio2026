@@ -1,0 +1,138 @@
+.contactOuter {
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
+.contactOuter .contantInner {
+  width: 80%;
+  max-width: 920px;
+  margin: 0px auto;
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .contactOuter .contantInner {
+    width: calc(100% - 80px);
+    padding: 0px 40px;
+  }
+}
+@media (max-width: 799px) {
+  .contactOuter .contantInner {
+    width: calc(100% - 48px);
+    padding: 0px 24px;
+  }
+}
+.contactOuter button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.formOuter {
+  width: calc(65% - 32px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-right: 32px;
+}
+
+.title {
+  width: 100%;
+  color: #a9a9a9;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  padding-bottom: 16px;
+}
+
+.pictureOuter {
+  width: calc(35% - 0px);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.pictureOuter img {
+  width: 100%;
+  display: block;
+}
+
+.flexBox {
+  display: flex;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .contantInner {
+    width: calc(100% - 80px);
+    padding: 0px 40px;
+  }
+}
+@media (max-width: 799px) {
+  .flexBox {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .formOuter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-right: 0px;
+    border-right: unset;
+  }
+  .pictureOuter {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-left: 0px;
+  }
+  .pictureOuter img {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+.loadingOuter {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(75, 73, 67, 0.631372549);
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.loadingOuter .loadingWord {
+  color: #fafafa;
+  letter-spacing: 0.2em;
+}
+
+.successOuter {
+  width: 400px;
+  height: 200px;
+  position: fixed;
+  top: calc(50vh - 150px);
+  left: calc(50vw - 200px);
+  background: #FFF;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 16px;
+  border-radius: 8px;
+  letter-spacing: 0.1em;
+  color: #4b4943;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.successOuter > div {
+  height: 100px;
+  width: 100px;
+}/*# sourceMappingURL=contact.module.css.map */

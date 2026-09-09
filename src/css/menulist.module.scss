@@ -1,0 +1,134 @@
+$primary-color: #86b6ff;
+$secondary-color: #f2ede2;
+$hover-color: #b7d2ff;
+$accent-color: #e8a33d;
+$accent-deep: #c98325;
+$background-color: #14161d;
+
+$primary-font-size: 20px;
+$content-font-size: 16px;
+$small-font-size: 14px;
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+a {
+  font-size: $content-font-size;
+}
+
+.overlayBackground {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  height: calc(100% - 60px);
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -3;
+  opacity: 0;
+  pointer-events: none;
+
+  &.is-active {
+    pointer-events: auto;
+    animation: 0.6s ease show;
+    animation-fill-mode: forwards;
+
+    .menulist {
+      animation: 0.8s ease move;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &.is-inactive {
+    pointer-events: none;
+    animation: 0.6s ease vanishing;
+    animation-fill-mode: forwards;
+
+    .menulist {
+      animation: 0.8s ease leave;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    z-index: -3;
+  }
+
+  100% {
+    opacity: 1;
+    z-index: 100;
+  }
+}
+
+@keyframes vanishing {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -3;
+  }
+}
+
+.menulist {
+  width: 100%;
+  max-width: 180px;
+  height: 100%;
+  background: $background-color;
+  z-index: 200;
+  font-size: $content-font-size;
+  padding: 16px 24px;
+  color: $primary-color;
+  border-top: 0.5px solid $secondary-color;
+  transform: translate(-100px, 0px);
+
+  & > div:nth-child(1) {
+    border-bottom: 0.5px solid $secondary-color;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $primary-color;
+
+    &.active {
+      color: $hover-color;
+    }
+    &.active::before {
+      display: inline-block;
+      content: " ";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $accent-color;
+      margin-right: 8px;
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-100px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes leave {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  100% {
+    transform: translate(-100%, 0px);
+  }
+}

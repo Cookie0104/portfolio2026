@@ -1,0 +1,523 @@
+$primary-color: #86b6ff;
+$secondary-color: #f2ede2;
+$hover-color: #b7d2ff;
+$accent-color: #e8a33d;
+$accent-deep: #c98325;
+$background-color: #14161d;
+$white: #1c2029;
+
+$primary-font-size: 20px;
+$content-font-size: 16px;
+$small-font-size: 14px;
+
+.aboutOuter {
+  width: 90%;
+  max-width: 900px;
+  height: fit-content;
+  min-height: calc(60vh - 60px);
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+  gap: 28px;
+  position: relative;
+
+  .name {
+    font-size: 40px;
+    display: flex;
+    color: $secondary-color;
+    line-height: 48px;
+    height: fit-content;
+    display: flex;
+    gap: 16px;
+    padding-bottom: 16px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 24px 0px 8px 0px;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    &:hover {
+      transform: rotate(-2deg);
+      cursor: default;
+    }
+  }
+
+  .role {
+    font-size: 24px;
+    color: rgba(242, 237, 226, 0.75);
+    line-height: 44px;
+    letter-spacing: 0.05em;
+
+    span {
+      display: inline-block;
+      cursor: pointer;
+      border: 1px dashed rgba(242, 237, 226, 0.3);
+      border-radius: 6px;
+      padding: 2px 10px;
+      margin: 0px 2px;
+      color: $secondary-color;
+      transition: color 0.25s ease, border-color 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+
+      &:nth-of-type(1) { transform: rotate(-1.5deg); }
+      &:nth-of-type(2) { transform: rotate(1deg); }
+      &:nth-of-type(3) { transform: rotate(-1deg); }
+
+      &:hover {
+        border-color: $accent-color;
+        color: $accent-color;
+        transform: translateY(-2px) rotate(0deg);
+      }
+    }
+
+    span.blue {
+      border-style: solid;
+      border-color: $accent-color;
+      background-color: rgba(232, 163, 61, 0.14);
+      color: $accent-color;
+      font-weight: 600;
+
+      &:hover {
+        transform: translateY(-2px) rotate(0deg);
+      }
+    }
+  }
+
+  .aboutContent {
+    font-size: $primary-font-size;
+    color: rgba(242, 237, 226, 0.8);
+    line-height: 40px;
+    padding-bottom: 24px;
+  }
+
+  .picture {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: $white;
+    border-radius: 12px;
+    border: 1px solid rgba(242, 237, 226, 0.1);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    position: relative;
+    transition: box-shadow 0.4s ease, border-color 0.4s ease;
+
+    &::before, &::after {
+      content: " ";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-color: $accent-color;
+      opacity: 0.8;
+    }
+    &::before {
+      top: 8px;
+      left: 8px;
+      border-top: 2px solid;
+      border-left: 2px solid;
+    }
+    &::after {
+      bottom: 8px;
+      right: 8px;
+      border-bottom: 2px solid;
+      border-right: 2px solid;
+    }
+
+    &:hover {
+      border-color: rgba(232, 163, 61, 0.4);
+      box-shadow: 0 16px 40px rgba(232, 163, 61, 0.15);
+    }
+
+    img {
+      width: 100%;
+      height: fit-content;
+    }
+  }
+  .picture2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    img {
+      width: 60%;
+      max-width: 350px;
+      min-width: 200px;
+      height: fit-content;
+    }
+  }
+}
+
+:root {
+  --before-start: #ffd255;
+  --before-end: #ffd255;
+  --after-start: #ffc025;
+  --after-end: #ffed7c;
+  --bg-start: #edfeff;
+  --bg-end: #cff3ff;
+}
+
+//
+.picAndNameOuter {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 699px) {
+  .picAndNameOuter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin-bottom: 40px;
+  }
+}
+
+//
+.switchButton {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  border-radius: 20px;
+  position: relative;
+  background: linear-gradient(to bottom, var(--bg-start), var(--bg-end));
+  box-shadow: inset -0px 10px 8px 3px rgba(0, 0, 0, 0.15);
+  // margin: 0px auto;
+
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    margin: 6px;
+    width: 28px;
+    height: 28px;
+    left: var(--before-left, 0px);
+    transition: left 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    background: linear-gradient(
+      to bottom,
+      var(--before-start),
+      var(--before-end)
+    );
+    box-shadow: 2px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  &:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    margin: 9px;
+    width: 22px;
+    height: 22px;
+    left: var(--after-left, 0px);
+    transition: left 0.3s ease;
+    background: linear-gradient(
+      to bottom,
+      var(--after-start),
+      var(--after-end)
+    );
+  }
+
+  .switchClickArea {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+
+    &:nth-child(1) {
+      &::before {
+        pointer-events: none;
+        content: " ";
+        display: var(--status1, block);
+        position: absolute;
+        margin: 6px;
+        width: 28px;
+        height: 28px;
+        background-image: url("../img/img-cloud1.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        left: 34px;
+        top: 2px;
+      }
+      &::after {
+        pointer-events: none;
+        content: " ";
+        display: var(--status1, block);
+        position: absolute;
+        margin: 6px;
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/img-cloud2.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        left: 64px;
+        top: 8px;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 24px;
+
+      &::before {
+        pointer-events: none;
+        content: " ";
+        display: var(--status2, none);
+        position: absolute;
+        margin: 6px;
+        width: 32px;
+        height: 32px;
+        background-image: url("../img/img-cloud3.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        left: -32px;
+        top: 4px;
+      }
+      &::after {
+        pointer-events: none;
+        content: " ";
+        display: var(--status2, none);
+        position: absolute;
+        margin: 6px;
+        width: 32px;
+        height: 32px;
+        background-image: url("../img/img-cloud4.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        left: 20px;
+        top: 4px;
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        pointer-events: none;
+        content: " ";
+        display: var(--status3, none);
+        position: absolute;
+        margin: 6px;
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/img-star1.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        left: -64px;
+        top: -4px;
+      }
+      &::after {
+        pointer-events: none;
+        content: " ";
+        display: var(--status3, none);
+        position: absolute;
+        margin: 6px;
+        width: 32px;
+        height: 32px;
+        background-image: url("../img/img-star2.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        left: -40px;
+        top: -6px;
+      }
+    }
+  }
+}
+
+// .toggle {
+//   display: block;
+//   text-align: center;
+//   margin-top: 40px;
+//   user-select: none;
+// }
+// .toggleCheckbox {
+//   display: none;
+// }
+// .toggleBtn {
+//   display: block;
+//   margin: 0 auto;
+
+//   font-size: 1.4em;
+
+//   transition: all 350ms ease-in;
+
+//   &:hover {
+//     cursor: pointer;
+//   }
+// }
+
+// .toggleBtn,
+// .toggleCheckbox,
+// .toggleFeature {
+//   &,
+//   &:before,
+//   &:after {
+//     transition: all 250ms ease-in;
+//   }
+//   &:before,
+//   &:after {
+//     content: "";
+//     display: block;
+//   }
+// }
+
+// $toggleHeight: 36px;
+// $toggleWidth: 100px;
+// $borderWidth: 5px;
+// $toggleBtnRadius: $toggleHeight - 14px;
+
+// $bgColor--night: #3c4145;
+// $borderColor--night: #1c1c1c;
+// $toggleBtn-bgColor--night: #fff;
+// $toggleBtn-borderColor--night: #e3e3c7;
+
+// $bgColor--day: #9ee3fb;
+// $borderColor--day: #86c3d7;
+// $toggleBtn-bgColor--day: #ffdf6d;
+// $toggleBtn-borderColor--day: #e1c348;
+
+// $cloud-borderColor: #d3d3d3;
+// $cloud-bgColor: #fff;
+
+// .toggleDaynight,
+// .toggleLike {
+//   .toggleBtn {
+//     position: relative;
+//     height: $toggleHeight;
+//     width: $toggleWidth;
+//     border-radius: $toggleHeight;
+
+//     //toggle button
+//     &:before {
+//       position: absolute;
+//       top: 2px;
+//       left: 4px;
+//       width: $toggleBtnRadius;
+//       height: $toggleBtnRadius;
+//       border-radius: 50%;
+//     }
+//   }
+// }
+
+// .toggleDaynight {
+//   .toggleBtn {
+//     background: linear-gradient(to bottom, #577EB5, #AFCAFF);
+
+//     //toggle button
+//     &:before {
+//       background-color: $toggleBtn-bgColor--night;
+//       border-width: 5px;
+//       border-style: solid;
+//       border-color: transparent;
+//       border-radius: 40px;
+//       background-image: linear-gradient(#CEE5FF, #F1F9FF),
+//         linear-gradient(to bottom, #D6E9FF, #CDE4FF);
+//       background-clip: padding-box, border-box;
+//       background-origin: padding-box, border-box;
+//     }
+//     &:after {
+//       position: absolute;
+//       top: 62%;
+//       left: $toggleWidth - ($toggleBtnRadius) - ($borderWidth * 2) - 20px;
+//       z-index: 10;
+//       width: $toggleBtnRadius / 5;
+//       height: $toggleBtnRadius / 5;
+//       opacity: 0;
+//       background-color: $cloud-bgColor;
+//       border-radius: 50%;
+
+//       //crazy ass box-shadow to make the cloud
+//       box-shadow: $cloud-bgColor 0 0, $cloud-bgColor 3px 0, $cloud-bgColor 6px 0,
+//         $cloud-bgColor 9px 0, $cloud-bgColor 11px 0, $cloud-bgColor 14px 0,
+//         $cloud-bgColor 16px 0, $cloud-bgColor 21px -1px 0 1px,
+//         $cloud-bgColor 16px -7px 0 -2px, $cloud-bgColor 7px -7px 0 1px;
+//       transition: opacity 100ms ease-in;
+//     }
+//   }
+
+//   @keyframes starry_star {
+//     50% {
+//       background-color: rgba(255, 255, 255, 0.1);
+//       box-shadow: #fff 30px -3px 0 0, #fff 12px 10px 0 -1px,
+//         rgba(255, 255, 255, 0.1) 38px 18px 0 1px, #fff 32px 34px 0 0,
+//         rgba(255, 255, 255, 0.1) 20px 24px 0 -1.5px, #fff 5px 38px 0 1px;
+//     }
+//   }
+//   @keyframes bounceIn {
+//     0% {
+//       opacity: 0;
+//       transform: scale(0.3);
+//     }
+//     50% {
+//       opacity: 100;
+//       transform: scale(1.1);
+//     }
+//     55% {
+//       transform: scale(1.1);
+//     }
+//     75% {
+//       transform: scale(0.9);
+//     }
+//     100% {
+//       opacity: 100;
+//       transform: scale(1);
+//     }
+//   }
+//   //what happens once checkbox is checked
+//   .toggleCheckbox:checked {
+//     & + .toggleBtn {
+//       background: linear-gradient(
+//         180deg,
+//         rgba(207, 243, 255, 1) 0%,
+//         rgba(237, 254, 255, 1) 100%
+//       );
+
+//       &:before {
+//         left: $toggleWidth - ($toggleBtnRadius) - ($borderWidth * 2) - 4px;
+//         background: linear-gradient(
+//           180deg,
+//           rgba(255, 193, 35, 1) 0%,
+//           rgba(255, 234, 0, 1) 100%
+//         );
+//         border-style: solid;
+//         border-color: transparent;
+//         border-radius: 40px;
+//         background-image: linear-gradient( to bottom, #FFD255, #FFD255),
+//           linear-gradient(to bottom, #FFC025, #FFED7C);
+//         background-clip: padding-box, border-box;
+//         background-origin: padding-box, border-box;
+//       }
+//       &:after {
+//         opacity: 100;
+//         animation-name: bounceIn;
+//         animation-duration: 0.6s;
+//         animation-delay: 0.1s;
+//         animation-fill-mode: backwards;
+//         animation-timing-function: ease-in-out;
+//       }
+
+//       > .toggleFeature {
+//         opacity: 0;
+//         box-shadow: rgba(255, 255, 255, 0.1) 30px -3px 0 -4px,
+//           rgba(255, 255, 255, 0.1) 12px 10px 0 -5px, #fff 38px 18px 0 -3px,
+//           rgba(255, 255, 255, 0.1) 32px 34px 0 -4px, #fff 20px 24px 0 -5.5px,
+//           rgba(255, 255, 255, 0.1) 5px 38px 0 -3px;
+//         animation: none;
+
+//         &:before {
+//           left: 25px;
+//           transform: rotate(70deg);
+//         }
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,37 @@
+$primary-color: #86b6ff;
+$secondary-color: #f2ede2;
+$hover-color: #b7d2ff;
+$accent-deep: #c98325;
+$background-color: #14161d;
+
+.hamburger {
+  &.is-active {
+    .line:nth-child(1) {
+      width: 12px;
+      background-color: $accent-deep;
+      -webkit-transform: translate(-8px,4px) rotate(-45deg);
+      -ms-transform: translate(-8px,4px) rotate(-45deg);
+      -o-transform: translate(-8px,4px) rotate(-45deg);
+      transform: translate(-8px,4px) rotate(-45deg);
+    }
+    .line:nth-child(3) {
+      width: 12px;
+      background-color: $accent-deep;
+      -webkit-transform: translate(-8px,-4px) rotate(45deg);
+      -ms-transform: translate(-8px,-4px) rotate(45deg);
+      -o-transform: translate(-8px,-4px) rotate(45deg);
+      transform: translate(-8px,-4px) rotate(45deg);
+    }
+  }
+
+  .line {
+    width: 24px;
+    height: 2px;
+    background-color: $secondary-color;
+    display: block;
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}

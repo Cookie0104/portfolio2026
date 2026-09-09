@@ -1,0 +1,153 @@
+[
+  {
+    "id": 1,
+    "title-en": "Official Website of Experience Design Center",
+    "subtitle-en": "Exploring Our Experience Design",
+    "title-ch": "使用者體驗中心形象官網設計",
+    "subtitle-ch": "揭開使用者體驗中心設計思維",
+    "introduction-en": "To cater to company policy and prioritize the importance of UX, our new department - 'Experience Design Center' needed an internal website to promote our team's concepts, purposes, services and collaboration processes to other departments. This website was designed to visually convey both the identity and style of our team, highlighting the value of UX within the organization.",
+    "introduction-ch": "為響應公司政策，強化使用者體驗的重要性，新成立的 Experience Design Center 團隊需要一個對內形象官網，讓其他部門理解我們的定位、工作內容與合作模式。本專案為一頁式網頁設計，目標是以視覺風格和內容結構展現 UX 團隊的價值與特色。",
+    "role-en": ["Web designer", "Content strategist", "Front-end developer"],
+    "role-ch": ["網頁設計師", "內容設計", "前端開發"],
+    "tool": ["Photoshop", "Figma", "HTML", "CSS", "JQuery"]
+  },
+  {
+    "id": 2,
+    "content-ch": [
+      {
+        "title": "負責內容",
+        "content": [
+          "1. 從零開始規劃網站整體內容與架構",
+          "2. 提出多套視覺風格設計提案",
+          "3. 靜態網頁開發與實際上線"
+        ]
+      },
+      {
+        "highlight-title": "專案成效",
+        "highlight-content": [
+          "增加 UX 團隊於公司內部的曝光度",
+          "與其他部門的合作機會增加約 30%",
+          "成功促進從未合作過的單位主動接觸 UX 團隊"
+        ]
+      },
+      {
+        "title": "專案重點與挑戰",
+        "subtitle": "-一個網頁該呈現的內容怎麼去規劃？",
+        "content": [
+          "Content design(內容設計)是為了要讓網站服務，盡可能簡單清楚地表達、並容易理解。因此在開始設計前參考了許多設計團隊的形象網站，以及多數人們對團隊或UIUX的疑問，進而規劃需要呈現於網站的內容。"
+        ]
+      },
+      {
+        "subtitle": "-從零開始的內容設計",
+        "content": [
+          "原始任務僅為「設計UX團隊官網」，沒有提供內容。為了讓從未接觸過 UX 的同仁也能理解，我先思考他們最關心的幾個問題："
+        ],
+        "content2": [
+          "我們是誰？",
+          "什麼是使用者體驗？",
+          "我們的服務內容是什麼？",
+          "如何與我們合作？",
+          "實際成效為何？"
+        ],
+        "content3": [
+          "依據這些問題架構網站內容，讓資訊針對目標族群更有可讀性。"
+        ],
+        "image": "xdc1.png"
+      },
+      {
+        "image": "xdc2.png",
+        "imageWord":"專案設計提案"
+      },
+
+      {
+        "title": "響應式開發的轉變",
+        "subtitle": "-要怎麼兼顧不同的裝置呈現的樣子？",
+        "content": [
+          "過往習慣以 px 為單位開發，但此專案需滿足不同裝置尺寸下的良好呈現，因此改以 vh/vw 為單位，確保第一屏關鍵視覺在任何裝置上都能被完整看到"
+        ]
+      },
+      {
+        "subtitle": "-論微動畫的重要性",
+        "content": [
+          "單頁網站容易因內容過多而造成疲乏，加入滾動時的微動畫，有效吸引使用者注意，提升整體使用體驗。"
+        ]
+      },
+      {
+        "title": "最終設計成果",
+        "content": [
+          "以活潑的配色與大膽排版突顯團隊年輕、創新的形象，融合品牌三種代表色，打造專屬團隊風格。透過視覺吸引力提升點擊與互動率，進一步加強其他部門對 UX 的認識與重視。"
+        ],
+        "video": "XDC.mp4"
+      }
+    ],
+    "content-en": [
+      {
+        "title": "Responsibilities",
+        "content2": [
+          "Planned the entire structure of the website and its contents from scratch",
+          "Proposed multiple visual design proposals",
+          "Developed and launched the website"
+        ]
+      },
+      {
+        "highlight-title": "Achievement",
+        "highlight-content": [
+          "Increased internal visibility of the UX team.",
+          "Boosted cross-department collaborations by approximately 30%.",
+          "Motivated teams we had never worked with to proactively reach out for UX support"
+        ]
+      },
+      {
+        "title": "Highlights & Challenges",
+        "subtitle": "What Should a One-Pager Include?",
+        "content": [
+          "Good content design makes services easier to understand. Before designing, I have referenced other design teams' websites and collected common questions people had about UI/UX. This helped define what information should appear and how to structure it clearly and efficiently."
+        ]
+      },
+
+      {
+        "subtitle": "Content Design from Zero",
+        "content": [
+          "The initial task was only “designing a website of UX team” — with no existing content provided. To ensure the clarity for colleagues who were unfamiliar with UX, I started by thinking about some questions they would likely concern:"
+        ],
+        "content2": [
+          "Who are we?",
+          "What is user experience?",
+          "What services do we offer?",
+          "How can they work with us?",
+          "What results have we achieved?"
+        ],
+        "content3": [
+          "The contents were structured according to the questions above to enhance relevance and readability."
+        ],
+        "image": "xdc1.png"
+      },
+
+      {
+        "image": "xdc2.png",
+        "imageWord":"All the proposals of this project"
+      },
+
+      {
+        "title": "Responsive Layout Adjustments",
+        "subtitle": "How to maintain design consistency on various devices?",
+        "content": [
+          "Instead of using a pixel-based layout, I transitioned the units to vh/vw to ensure the hero section (first fold) was clearly visible across different devices — something crucial for a visually impactful one-page site."
+        ]
+      },
+      {
+        "subtitle": "The Role of Microinteractions",
+        "content": [
+          "One-page websites might make the audiance feel static or overwhelming. Micro-animations on scroll were added to highlight key information and maintain user engagement throughout the browsing experience."
+        ]
+      },
+      {
+        "title": "Final Outcome",
+        "content": [
+          "The final website design featured vibrant brand colors and bold layouts to reflect the team's energy and creativity. By blending three brand colors, this website showed a distinct team identity. The strong visual appeal helped increase interaction and made it easier for other departments to understand and re-value the role of UX."
+        ],
+        "video": "XDC.mp4"
+      }
+    ]
+  }
+]

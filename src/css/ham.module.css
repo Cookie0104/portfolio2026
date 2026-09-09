@@ -1,0 +1,16 @@
+.hamburger.is-active .line:nth-child(1) {
+  width: 12px;
+  transform: translate(-8px, 4px) rotate(-45deg);
+}
+.hamburger.is-active .line:nth-child(3) {
+  width: 12px;
+  transform: translate(-8px, -4px) rotate(45deg);
+}
+.hamburger .line {
+  width: 24px;
+  height: 2px;
+  background-color: #4b4943;
+  display: block;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=ham.module.css.map */

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+path:hover {
+  opacity: 0.9;
+}
+
+svg:hover {
+  cursor: url("../img/click.svg"), auto; /* 滑鼠游標箭頭尖端為圖片的左上角 */
+}
+
+circle:hover {
+  opacity: 0.7;
+}
+
+.dragging rect {
+  stroke: #577eb5;
+  opacity: 0.8;
+}
+
+.dowloadBtn:hover {
+  fill: #3a639c;
+  cursor: url("../img/click.svg"), auto;
+}/*# sourceMappingURL=draggable.module.css.map */

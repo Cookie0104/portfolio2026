@@ -1,0 +1,248 @@
+.aboutOuter {
+  width: 90%;
+  max-width: 900px;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: calc(60vh - 60px);
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+  gap: 28px;
+  position: relative;
+}
+.aboutOuter .name {
+  font-size: 40px;
+  display: flex;
+  color: #577eb5;
+  line-height: 48px;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin: 24px 0px 8px 0px;
+}
+.aboutOuter .role {
+  font-size: 24px;
+  color: #4b4943;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+}
+.aboutOuter .role span {
+  display: inline-block;
+  cursor: pointer;
+}
+.aboutOuter .role span:hover {
+  color: #ededed;
+  transition: color 0.3s ease;
+  text-shadow: -1px -1px 0 #577eb5, 1px -1px 0 #577eb5, -1px 1px 0 #577eb5, 1px 1px 0 #577eb5;
+}
+.aboutOuter .role span.blue {
+  border-radius: 4px;
+  padding: 0px 4px;
+  color: #ededed;
+  transition: background-color 0.5s ease;
+  height: 44px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #577eb5;
+}
+.aboutOuter .aboutContent {
+  font-size: 20px;
+  color: #4b4943;
+  line-height: 40px;
+  padding-bottom: 24px;
+}
+.aboutOuter .picture {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutOuter .picture img {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.aboutOuter .picture2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.aboutOuter .picture2 img {
+  width: 60%;
+  max-width: 350px;
+  min-width: 200px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+:root {
+  --before-start: #ffd255;
+  --before-end: #ffd255;
+  --after-start: #ffc025;
+  --after-end: #ffed7c;
+  --bg-start: #edfeff;
+  --bg-end: #cff3ff;
+}
+
+.picAndNameOuter {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 699px) {
+  .picAndNameOuter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin-bottom: 40px;
+  }
+}
+.switchButton {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  border-radius: 20px;
+  position: relative;
+  background: linear-gradient(to bottom, var(--bg-start), var(--bg-end));
+  box-shadow: inset 0px 10px 8px 3px rgba(0, 0, 0, 0.15);
+}
+.switchButton:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  margin: 6px;
+  width: 28px;
+  height: 28px;
+  left: var(--before-left, 0px);
+  transition: left 0.3s ease;
+  background: linear-gradient(to bottom, var(--before-start), var(--before-end));
+  box-shadow: 2px 1px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.switchButton:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  margin: 9px;
+  width: 22px;
+  height: 22px;
+  left: var(--after-left, 0px);
+  transition: left 0.3s ease;
+  background: linear-gradient(to bottom, var(--after-start), var(--after-end));
+}
+.switchButton .switchClickArea {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.switchButton .switchClickArea:nth-child(1)::before {
+  pointer-events: none;
+  content: " ";
+  display: var(--status1, block);
+  position: absolute;
+  margin: 6px;
+  width: 28px;
+  height: 28px;
+  background-image: url("../img/img-cloud1.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 34px;
+  top: 2px;
+}
+.switchButton .switchClickArea:nth-child(1)::after {
+  pointer-events: none;
+  content: " ";
+  display: var(--status1, block);
+  position: absolute;
+  margin: 6px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/img-cloud2.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 64px;
+  top: 8px;
+}
+.switchButton .switchClickArea:nth-child(2) {
+  width: 24px;
+}
+.switchButton .switchClickArea:nth-child(2)::before {
+  pointer-events: none;
+  content: " ";
+  display: var(--status2, none);
+  position: absolute;
+  margin: 6px;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/img-cloud3.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: -32px;
+  top: 4px;
+}
+.switchButton .switchClickArea:nth-child(2)::after {
+  pointer-events: none;
+  content: " ";
+  display: var(--status2, none);
+  position: absolute;
+  margin: 6px;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/img-cloud4.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 20px;
+  top: 4px;
+}
+.switchButton .switchClickArea:nth-child(3)::before {
+  pointer-events: none;
+  content: " ";
+  display: var(--status3, none);
+  position: absolute;
+  margin: 6px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/img-star1.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: -64px;
+  top: -4px;
+}
+.switchButton .switchClickArea:nth-child(3)::after {
+  pointer-events: none;
+  content: " ";
+  display: var(--status3, none);
+  position: absolute;
+  margin: 6px;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/img-star2.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: -40px;
+  top: -6px;
+}/*# sourceMappingURL=about.module.css.map */

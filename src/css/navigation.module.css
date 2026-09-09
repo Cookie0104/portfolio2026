@@ -1,0 +1,180 @@
+.header {
+  background: #ededed;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.08);
+}
+
+.navigationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0px 24px;
+  color: #4b4943;
+  font-size: 16px;
+  width: 80%;
+  max-width: 1150px;
+  margin: 0px auto;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .navigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0px 40px;
+    color: #4b4943;
+    font-size: 16px;
+    width: calc(100% - 80px);
+    letter-spacing: 0.1em;
+  }
+}
+@media (max-width: 799px) {
+  .navigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0px 24px;
+    color: #4b4943;
+    font-size: 16px;
+    width: calc(100% - 48px);
+    letter-spacing: 0.1em;
+  }
+}
+div:has(> .homeLinkArea) {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.homeLinkArea {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-decoration: none;
+  color: #4b4943;
+  width: 200px;
+}
+.homeLinkArea .name {
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.homeLinkArea .title {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.menu a {
+  color: #577eb5;
+  position: relative;
+  text-decoration: none;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+}
+.menu a.active {
+  color: #577eb5;
+  font-weight: 600;
+}
+.menu a.active::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background: #577eb5;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+}
+.menu a.active:hover {
+  color: #577eb5;
+  cursor: pointer;
+}
+.menu a.active:hover::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background: #577eb5;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  transform: translate(0px, 0px);
+  animation: unset;
+}
+.menu a:hover {
+  color: #3a639c;
+  cursor: pointer;
+}
+.menu a:hover::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background: #3a639c;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  transform: translate(0px, 50px);
+  animation: 1s ease show;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 1);
+  }
+  100% {
+    opacity: 100;
+    transform: scale(1, 1);
+  }
+}
+.buttonArea {
+  display: flex;
+  gap: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+}
+
+.secondMenu {
+  margin: 0px auto;
+  font-size: 18px;
+  border-bottom: 0.5px solid #577eb5;
+  display: flex;
+  justify-content: center;
+}
+.secondMenu a.active::after {
+  bottom: -12px;
+  height: 3px;
+}
+.secondMenu a.active:hover::after {
+  bottom: -12px;
+  height: 3px;
+}
+.secondMenu a:hover::after {
+  bottom: -12px;
+  height: 3px;
+}
+
+.languageBtnAndListOuter {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=navigation.module.css.map */

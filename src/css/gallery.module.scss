@@ -1,0 +1,349 @@
+$primary-color: #86b6ff;
+$secondary-color: #f2ede2;
+$accent-color: #e8a33d;
+$accent-deep: #c98325;
+$background-color: #14161d;
+$white: #1c2029;
+
+$primary-font-size: 20px;
+$small-font-size: 14px;
+
+.galleryOuter {
+  width: 100%;
+  padding-bottom: 120px;
+  padding-top: 32px;
+}
+
+.title {
+  width: 100%;
+  font-size: $primary-font-size;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: rgba(242, 237, 226, 0.45);
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &::after {
+    content: " ";
+    flex-grow: 1;
+    height: 1px;
+    background: rgba(242, 237, 226, 0.16);
+    box-shadow: 0 1px 0 rgba(232, 163, 61, 0.1);
+  }
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+
+.tab,
+.tabActive {
+  font-family: inherit;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+}
+
+.tab {
+  border: 1px dashed rgba(242, 237, 226, 0.25);
+  color: rgba(242, 237, 226, 0.5);
+
+  &:hover {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}
+
+.tabActive {
+  border: 1px solid $accent-color;
+  background: rgba(232, 163, 61, 0.14);
+  color: $accent-color;
+  font-weight: 600;
+}
+
+// ---------- Contact-sheet masonry grid ----------
+
+.grid {
+  column-count: 3;
+  column-gap: 24px;
+}
+
+.tile {
+  display: block;
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 24px;
+  position: relative;
+  border: 1px solid rgba(242, 237, 226, 0.1);
+  padding: 0px;
+  background: $white;
+  cursor: pointer;
+  border-radius: 2px;
+  overflow: hidden;
+  opacity: 0;
+  animation: tile-in 0.4s ease forwards;
+  animation-delay: var(--delay, 0s);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    border-color: rgba(232, 163, 61, 0.5);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    filter: grayscale(0.85) brightness(0.85);
+    transition: filter 0.5s ease, transform 0.5s ease;
+  }
+
+  &:hover img {
+    filter: grayscale(0) brightness(1);
+    transform: scale(1.02);
+  }
+}
+
+@keyframes tile-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.index {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: rgba(242, 237, 226, 0.6);
+  background: rgba(20, 22, 29, 0.6);
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.stackCount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+  background: rgba(20, 22, 29, 0.75);
+  border: 1px solid rgba(232, 163, 61, 0.4);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: $accent-color;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+
+.tile:hover .corner {
+  opacity: 1;
+}
+
+.cTL {
+  top: 8px;
+  left: 8px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  transform: translate(4px, 4px);
+}
+.tile:hover .cTL {
+  transform: translate(0px, 0px);
+}
+
+.cTR {
+  top: 8px;
+  right: 8px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: translate(-4px, 4px);
+}
+.tile:hover .cTR {
+  transform: translate(0px, 0px);
+}
+
+.cBL {
+  bottom: 8px;
+  left: 8px;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  transform: translate(4px, -4px);
+}
+.tile:hover .cBL {
+  transform: translate(0px, 0px);
+}
+
+.cBR {
+  bottom: 8px;
+  right: 8px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: translate(-4px, -4px);
+}
+.tile:hover .cBR {
+  transform: translate(0px, 0px);
+}
+
+.tileFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-top: 1px solid rgba(242, 237, 226, 0.08);
+}
+
+.tileCaption {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(242, 237, 226, 0.7);
+  letter-spacing: 0.01em;
+}
+
+.tileTag {
+  flex-shrink: 0;
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $accent-color;
+  border: 1px solid rgba(232, 163, 61, 0.4);
+  border-radius: 10px;
+  padding: 2px 8px;
+}
+
+.placeholderTile {
+  break-inside: avoid;
+  margin-bottom: 24px;
+  aspect-ratio: 1 / 1;
+  border: 1px dashed rgba(242, 237, 226, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  span {
+    font-size: 32px;
+    color: rgba(242, 237, 226, 0.2);
+    font-weight: 300;
+  }
+}
+
+.placeholderLabel {
+  font-size: 12px;
+  color: rgba(242, 237, 226, 0.3);
+}
+
+.lightbox {
+  position: fixed;
+  height: calc(100vh - 60px);
+  inset: 0;
+  background: rgba(10, 11, 15, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  z-index: 400;
+}
+
+.lightboxPanel {
+  width: 100%;
+  max-width: 720px;
+  max-height: 88vh;
+  background: $white;
+  border: 1px solid rgba(242, 237, 226, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.lightboxHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(242, 237, 226, 0.1);
+  font-size: 14px;
+  color: $secondary-color;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+.lightboxScroll {
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.lightboxClose {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(242, 237, 226, 0.2);
+  background: transparent;
+  color: $secondary-color;
+  font-size: 14px;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &:hover {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}
+
+@media (max-width: 799px) {
+  .grid {
+    column-count: 2;
+    column-gap: 16px;
+  }
+  .tile {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    column-count: 1;
+  }
+}

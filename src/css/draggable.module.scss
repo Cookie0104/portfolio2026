@@ -1,0 +1,33 @@
+$primary-color: #86b6ff;
+$secondary-color: #f2ede2;
+$hover-color: #b7d2ff;
+$accent-color: #e8a33d;
+$background-color: #14161d;
+
+path:hover {
+  opacity: 0.9;
+}
+
+svg {
+  &:hover {
+    cursor: url("../img/click.svg"), auto; /* 滑鼠游標箭頭尖端為圖片的左上角 */
+  }
+}
+
+circle:hover {
+  opacity: 0.7;
+}
+
+.dragging {
+  rect {
+    stroke: $accent-color;
+    opacity: 0.8;
+  }
+}
+
+.dowloadBtn {
+  &:hover {
+    fill: $accent-color;
+    cursor: url("../img/click.svg"), auto;
+  }
+}

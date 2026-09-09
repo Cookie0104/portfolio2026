@@ -1,0 +1,244 @@
+[
+  {
+    "id": 1,
+    "title-ch": "股票到價通知動線優化",
+    "subtitle-ch": "三版 A/B 測試：找出最直覺的到價通知動線",
+    "title-en": "Stock Price Alert Flow Optimization",
+    "subtitle-en": "A/B testing three flows to find the most intuitive price-alert experience",
+    "introduction-ch": "到價通知是證券交易 App 中，讓使用者不需要隨時盯盤、也能掌握進場時機的重要功能。這次專案針對「條件設定」「通知管理」「跨個股切換」三個核心情境，設計了三種不同的資訊架構與操作動線（Flow1 / Flow2 / Flow3），並透過內部與外部使用者的可用性測試，比較三版動線的表現，找出最終採用的版本。",
+    "introduction-en": "Price alerts let investors act on the right moment without staring at the market all day. For this project I designed three different information architectures and flows (Flow1 / Flow2 / Flow3) covering condition setup, notification management, and cross-stock switching, then ran usability tests with internal and external users to compare the three flows and converge on a final direction.",
+    "role-ch": [
+      "使用者研究",
+      "Wireframe 規劃設計",
+      "UX/UI 設計",
+      "易用性測試主持",
+      "A/B Test 設計"
+    ],
+    "role-en": [
+      "User Research",
+      "Wireframe Design",
+      "UI Design",
+      "Usability Testing",
+      "A/B Test Design"
+    ],
+    "tool": [
+      "Figma",
+      "Axure RP",
+      "Usability Testing",
+      "A/B Testing"
+    ]
+  },
+  {
+    "id": 2,
+    "content-ch": [
+      {
+        "demo": "hero"
+      },
+      {
+        "title": "負責內容",
+        "content": [
+          "規劃三種到價通知動線（Flow1 / Flow2 / Flow3），涵蓋條件設定、通知紀錄、通知管理三大情境",
+          "設計並主持內部可用性測試，邀請 3 位不同投資年資的使用者測試三版動線",
+          "整理外部使用者訪談回饋，比較不同投資經驗使用者對三版動線的認知差異",
+          "根據測試結果收斂設計決策，訂定最終採用版本與後續優化方向"
+        ]
+      },
+      {
+        "highlight-title": "測試方法",
+        "highlight-content": [
+          "內部測試：3 位使用者（投資年資 2〜5 年），每人依序測試 3 種 Flow，並各自完成 3 項任務",
+          "外部測試：2 位使用者（投資年資 7〜11 年），詳細展示三版動線後選擇偏好版本",
+          "任務一：想在台積電價格低於 2242 時收到通知，請設定條件",
+          "任務二：想查看之前總共設定過哪些個股、哪些條件，順便整理不需要的條件",
+          "任務三：因近期台股大漲，之前設定的價格條件已不合時宜，想要刪除 00878 關於成交價的條件"
+        ]
+      },
+      {
+        "title": "關鍵發現",
+        "subtitle": "-個股進入 vs. 總覽進入的認知落差",
+        "content": [
+          "多數使用者從「個股報價頁」進入到價通知時，會預期只看到「這支股票」的通知設定，而不是全部個股混在一起；如果一進去看到的是「總覽」，會覺得完全無法預期裡面是什麼",
+          "Flow1 從個股報價頁進入，「通知管理」分頁容易讓使用者誤以為只管理這支股票的通知，實際上卻是全部個股"
+        ]
+      },
+      {
+        "subtitle": "-圖示與命名的理解落差",
+        "content": [
+          "「通知」icon 放在首頁左上角，不同使用者對它的直覺理解不一致：有人覺得像是已觸發的智慧單，有人則完全沒注意到",
+          "「檢視」圖示放在右上角不夠明顯，測試中有使用者一開始完全沒發現可以點擊",
+          "「複合條件」這個功能名稱，使用者一開始不太清楚意思，需要展開後才理解"
+        ]
+      },
+      {
+        "subtitle": "-動線切換與刪除機制不一致",
+        "content": [
+          "跨 Tab 切換的邏輯不一致：用 icon 切換 Tab1↔3 時，實際上是「切換 Tab」而非「開新頁面」，容易造成操作上的混淆",
+          "刪除機制在不同版本中做法不一致，導致操作時多繞了一步"
+        ]
+      },
+      {
+        "title": "受測者個別結論",
+        "subtitle": "內部受測者 A｜男，21–30 歲，投資年資 5 年",
+        "content": [
+          "最終選擇 Flow1、Flow3。認為條件列表最好能在同一個畫面呈現，資訊比較清爽、方便比對，不希望還要切換頁面確認。",
+          "回饋指出「複合條件」這類進階功能一開始不容易看懂，需要展開後才理解，建議加上更清楚的說明。",
+          "也提到目前沒有「修改」功能，價格設定錯誤時只能整筆刪除重新設定，操作上不夠有效率。"
+        ]
+      },
+      {
+        "subtitle": "內部受測者 B｜男，21–30 歲，投資年資 3–5 年",
+        "content": [
+          "三版都能接受，但認為若設定完成後還要切到另一個頁面才能確認結果，會不如 Flow3 一次呈現來得清楚。",
+          "指出「檢視」圖示放在右上角不夠明顯，測試過程中一開始完全沒有注意到。",
+          "直覺認為「通知」應該要點首頁左上角的信封 icon，跟目前的圖示設計不太一致。"
+        ]
+      },
+      {
+        "subtitle": "內部受測者 C｜男性，投資年資約 2 年",
+        "content": [
+          "最終選擇 Flow1、Flow3（因時間因素沒有完整測完 Flow2）。",
+          "認為跨 Tab 切換用「切換分頁」而非「開新頁面」的邏輯不夠直覺，不容易一眼判斷自己是切了頁籤、還是正在編輯條件。",
+          "刪除機制在不同版本間做法不一致，操作時會卡頓、多繞一步。",
+          "建議如果能用「買進條件」「賣出條件」分類，會更貼近實際使用情境，一開始就能決定我要買或我要賣。"
+        ]
+      },
+      {
+        "subtitle": "外部受測者 D｜男，55–60 歲，投資年資 11 年",
+        "content": [
+          "詳細展示三版動線後選擇 Flow3。認為到價通知的使用者多半是沒辦法隨時盯盤的人，動線與功能都應該越簡單越好，最好觸發通知後能直接前往下單頁。",
+          "強調「沒有人會想從個股報價頁進去，卻看到全部個股的通知」——這是 Flow1 最大的問題：功能太多反而不想知道，還要另外找地方才能設定這支股票的通知，很麻煩。",
+          "認為 Flow2 的「總覽」完全無法預期裡面會是什麼。"
+        ]
+      },
+      {
+        "subtitle": "外部受測者 E｜男，25–30 歲，投資年資 7 年",
+        "content": [
+          "詳細展示三版動線後選擇 Flow3。認為證券下單 App 本身功能已經很多，不希望到價通知的動線也太複雜，Flow3 最直觀。",
+          "同樣認為 Flow1 從個股報價頁點鈴鐺進入時，「通知管理」應該只管理這支股票，放進所有個股會覺得有點奇怪。",
+          "不過也提到 Flow2 其實並非不好，「總覽」符合他對「所有個股通知」的預期，只是最終仍偏好 Flow3 的精簡。",
+          "建議在「其他」頁面直接做「到價通知紀錄」「到價通知設定」兩個入口，就不用再想到價通知的入口該放哪；也提到通知紀錄多半是已發生的事，瀏覽所有觸發紀錄的意義不大。"
+        ]
+      },
+      {
+        "highlight-title": "最終選擇",
+        "highlight-content": [
+          "多數內部與外部使用者最終都傾向保留 Flow1 與 Flow3 的組合",
+          "Flow3 的「新增條件」彈出式卡片被認為最直覺、資訊最集中——證券下單 App 本身功能已經很多，不希望到價通知的動線也太複雜",
+          "建議在「其他」頁面直接放上「到價通知紀錄」「到價通知設定」兩個入口，不需要先點進「到價通知」再切換分頁"
+        ]
+      },
+      {
+        "title": "專案反思",
+        "content": [
+          "這次測試讓我更確定「使用者從哪裡進入」會大幅影響他們對整個功能範疇的預期——即使功能設計得再完整，只要進入點的認知模型不符合使用者預期，還是會造成困惑",
+          "不同投資經驗的使用者，對「功能簡單」與「功能完整」的取捨標準差異很大；資深投資人更在意動線精簡、不被過多資訊干擾，這也讓我在後續設計時更重視依熟練度分眾的可能性"
+        ]
+      }
+    ],
+    "content-en": [
+      {
+        "demo": "hero"
+      },
+      {
+        "title": "What I Did",
+        "content": [
+          "Designed three price-alert flows (Flow1 / Flow2 / Flow3) covering condition setup, notification history, and notification management",
+          "Designed and moderated internal usability tests with 3 users of varying investing experience",
+          "Synthesized external interview feedback comparing how users with different investing experience read the three flows",
+          "Converged on a final design direction and follow-up priorities based on the test results"
+        ]
+      },
+      {
+        "highlight-title": "Test Method",
+        "highlight-content": [
+          "Internal testing: 3 users (2–5 years of investing experience), each tested all 3 flows and completed 3 tasks",
+          "External testing: 2 users (7–11 years of investing experience), shown all 3 flows in detail before stating a preference",
+          "Task 1: Set a condition to be notified when TSMC's price drops below 2242",
+          "Task 2: Review which stocks and conditions were previously set, and clean up the ones no longer needed",
+          "Task 3: Delete an outdated trade-price condition on 00878 after a recent market rally made it irrelevant"
+        ]
+      },
+      {
+        "title": "Key Findings",
+        "subtitle": "- The gap between entering from a single stock vs. an overview",
+        "content": [
+          "Most users entering from a specific stock's quote page expected to see only that stock's alerts, not everything mixed together; landing on an \"overview\" instead felt completely unpredictable",
+          "In Flow 1, entering from a stock's quote page made the \"Manage Notifications\" tab feel like it should only cover that stock, when it actually covered all of them"
+        ]
+      },
+      {
+        "subtitle": "- Gaps in icon and naming comprehension",
+        "content": [
+          "Reactions to the notification bell icon in the top-left of the home screen varied — some users read it as a triggered smart order, others didn't notice it at all",
+          "The \"inspect\" icon in the top-right wasn't prominent enough; some users didn't realize it was tappable at first",
+          "The term \"composite condition\" wasn't immediately clear; users only understood it after expanding it"
+        ]
+      },
+      {
+        "subtitle": "- Inconsistent switching and deletion mechanics",
+        "content": [
+          "Cross-tab switching logic was inconsistent: an icon that switched between Tab 1 and Tab 3 behaved like a tab switch rather than opening a new page, which caused confusion",
+          "Deletion worked differently across versions, adding an extra step to the flow"
+        ]
+      },
+      {
+        "title": "Individual Tester Conclusions",
+        "subtitle": "Internal Tester A — Male, 21–30, 5 years investing",
+        "content": [
+          "Final choice: Flow 1 and Flow 3. Preferred seeing the condition list on a single screen for a cleaner, easier comparison, without switching pages to confirm.",
+          "Noted that an advanced feature like \"composite condition\" wasn't clear at first glance and needed clearer explanation once expanded.",
+          "Also pointed out there was no \"edit\" function — a mistaken price condition had to be deleted and re-entered entirely, which felt inefficient."
+        ]
+      },
+      {
+        "subtitle": "Internal Tester B — Male, 21–30, 3–5 years investing",
+        "content": [
+          "Found all three flows workable, but felt that needing to switch pages to confirm a completed setting was less clear than Flow 3's single-screen presentation.",
+          "Pointed out the \"inspect\" icon in the top-right wasn't prominent enough — didn't notice it at first during testing.",
+          "Intuitively expected \"notifications\" to live behind the envelope icon in the home screen's top-left, which didn't match the actual icon design."
+        ]
+      },
+      {
+        "subtitle": "Internal Tester C — Male, ~2 years investing",
+        "content": [
+          "Final choice: Flow 1 and Flow 3 (didn't finish testing Flow 2 due to time constraints).",
+          "Found the cross-tab switching logic — behaving as a tab switch rather than opening a new page — unintuitive; hard to tell at a glance whether a tab was switched or a condition was being edited.",
+          "Deletion worked differently across versions, adding friction and extra steps.",
+          "Suggested categorizing by \"buy conditions\" vs. \"sell conditions\" would better match real use, letting users decide up front whether they're buying or selling."
+        ]
+      },
+      {
+        "subtitle": "External Tester D — Male, 55–60, 11 years investing",
+        "content": [
+          "Chose Flow 3 after seeing all three in detail. Believes price-alert users are typically people who can't watch the market constantly, so the flow and features should be as simple as possible, ideally jumping straight to the order page once triggered.",
+          "Emphasized that \"no one enters from a stock's quote page wanting to see every stock's alerts\" — Flow 1's biggest flaw: too many unrelated features, and having to hunt elsewhere just to set an alert for that one stock was frustrating.",
+          "Found Flow 2's \"overview\" completely unpredictable."
+        ]
+      },
+      {
+        "subtitle": "External Tester E — Male, 25–30, 7 years investing",
+        "content": [
+          "Chose Flow 3 after seeing all three in detail. Felt trading apps are already feature-dense, so price alerts shouldn't add more complexity — Flow 3 felt the most intuitive.",
+          "Also felt that entering from a stock's quote page via the bell icon (Flow 1) should mean \"Manage Notifications\" covers only that stock; seeing every stock felt odd.",
+          "Noted Flow 2 wasn't necessarily bad — the \"overview\" matched his expectation of seeing all stocks' alerts — but still preferred Flow 3's simplicity overall.",
+          "Suggested adding two direct entries under \"More\" — \"Alert History\" and \"Alert Settings\" — instead of navigating through a nested \"Price Alerts\" menu; also noted that browsing history of already-triggered alerts felt of limited value."
+        ]
+      },
+      {
+        "highlight-title": "Final Decision",
+        "highlight-content": [
+          "Most internal and external users ultimately preferred a combination of Flow 1 and Flow 3",
+          "Flow 3's \"Add Condition\" bottom-sheet was seen as the most intuitive, keeping information in one place — trading apps are already feature-dense, so users didn't want price alerts to add more complexity",
+          "Recommended adding two direct entries under \"More\" — \"Alert History\" and \"Alert Settings\" — instead of requiring users to enter \"Price Alerts\" first and then switch tabs"
+        ]
+      },
+      {
+        "title": "Reflections",
+        "content": [
+          "This round confirmed how much a user's entry point shapes their expectation of a feature's scope — even a well-built feature causes confusion if the entry point doesn't match the user's mental model",
+          "Users with different levels of investing experience trade off \"simple\" vs. \"complete\" very differently; experienced investors cared more about a lean flow free of extra noise, which made me want to explore designing by experience level going forward"
+        ]
+      }
+    ]
+  }
+]

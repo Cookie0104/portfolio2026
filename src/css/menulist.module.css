@@ -1,0 +1,108 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+a {
+  font-size: 16px;
+}
+
+.overlayBackground {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  height: calc(100% - 60px);
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -3;
+  opacity: 0;
+}
+.overlayBackground.is-active {
+  animation: 0.6s ease show;
+  animation-fill-mode: forwards;
+}
+.overlayBackground.is-active .menulist {
+  animation: 0.8s ease move;
+  animation-fill-mode: forwards;
+}
+.overlayBackground.is-inactive {
+  animation: 0.6s ease vanishing;
+  animation-fill-mode: forwards;
+}
+.overlayBackground.is-inactive .menulist {
+  animation: 0.8s ease leave;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    z-index: -3;
+  }
+  100% {
+    opacity: 1;
+    z-index: 100;
+  }
+}
+@keyframes vanishing {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  100% {
+    opacity: 0;
+    z-index: -3;
+  }
+}
+.menulist {
+  width: 100%;
+  max-width: 180px;
+  height: 100%;
+  background: #ededed;
+  z-index: 200;
+  font-size: 16px;
+  padding: 16px 24px;
+  color: #577eb5;
+  border-top: 0.5px solid #4b4943;
+  transform: translate(-100px, 0px);
+}
+.menulist > div:nth-child(1) {
+  border-bottom: 0.5px solid #4b4943;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.menulist a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #577eb5;
+}
+.menulist a.active {
+  color: #3a639c;
+}
+.menulist a.active::before {
+  color: #3a639c;
+  display: inline-block;
+  content: " ";
+  width: 8px;
+  height: 2px;
+  background: #577eb5;
+  margin-right: 4px;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-100px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes leave {
+  0% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(-100%, 0px);
+  }
+}/*# sourceMappingURL=menulist.module.css.map */

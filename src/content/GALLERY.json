@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "category": "UI/UX",
+    "title-en": "MiluTong Transit App",
+    "title-ch": "迷路通轉乘 App",
+    "images": ["bus-0.png", "bus-1.png", "bus-2.png", "bus-3.png", "bus-4.png"]
+  },
+  {
+    "id": 2,
+    "category": "graphic",
+    "title-en": "Mini Red Music Lecture Series",
+    "title-ch": "小紅樓音樂講座系列",
+    "images": ["poster-0.png", "poster-1.jpg", "poster-2.jpg"]
+  },
+  {
+    "id": 3,
+    "category": "product",
+    "title-en": "Pen Concept Render",
+    "title-ch": "產品3D建模",
+    "images": ["other-1.jpg"]
+  },
+  {
+    "id": 4,
+    "category": "graphic",
+    "title-en": "Concert Poster",
+    "title-ch": "音樂會文宣設計",
+    "images": ["fri-0.png","fri-1.png","fri-2.png","fri-3.jpg","fri-4.jpg"]
+  },
+  {
+    "id": 5,
+    "category": "UI/UX",
+    "title-en": "Pack Your Name — Signing Web",
+    "title-ch": "Pack Your Name － 電子簽署流程",
+    "images": ["pack-0.png","pack-1.png","pack-2.png","pack-3.png","pack-4.png","pack-5.png","pack-6.png"]
+  },
+  {
+    "id": 6,
+    "category": "graphic",
+    "title-en": "Graphic Design",
+    "title-ch": "音樂教室系列傳單設計",
+    "images": ["mini-0.png","mini-1.png","mini-2.png","mini-3.png","mini-4.png","mini-5.png"]
+  },
+  {
+    "id": 7,
+    "category": "graphic",
+    "title-en": "Coffee — Web Content",
+    "title-ch": "田寮生技咖啡品牌視覺",
+    "images": ["coffee-0.jpeg","coffee-1.jpeg","coffee-2.jpeg","coffee-3.jpeg","coffee-4.jpeg"]
+  },
+  {
+    "id": 8,
+    "category": "UI/UX",
+    "title-en": "Where do we go?",
+    "title-ch": "灣去哪兒? - 台灣景點推薦網站",
+    "images": ["where-0.jpeg","where-1.png","where-2.png","where-3.png","where-4.png"]
+  },
+  {
+    "id": 9,
+    "category": "Other",
+    "title-en": "Name Card",
+    "title-ch": "名片設計",
+    "images": ["other-0.jpg"]
+  }
+]

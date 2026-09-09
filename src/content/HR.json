@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "title-en": "Recruitment System Redesign",
+    "subtitle-en": "Optimizing recruiting with user-centric approach",
+    "title-ch": "HR人資系統與入職體驗優化",
+    "subtitle-ch": "以使用者為中心，優化招募流程",
+    "introduction-en": "The project - 'Recruitment System Redesign' kicked off because the old back-end system was expected to stop supporting the HR system by the end of 2024. The goal was to integrate those optimizable parts within existing processes uplift the overall experience of new employees from interview, registration to onboarding.",
+    "introduction-ch": "因舊系統（菁英甄選）即將於 2024 年底停止支援，「HR人資系統與入職體驗優化」專案於2023年啟動。目標是整合既有流程中可改善的部分，優化新進員工從面試、報到到入職的整體體驗。",
+    "role-en": ["User researcher", "UX designer"],
+    "role-ch": ["使用者研究", "wireframe規劃設計"],
+    "tool": ["Figma", "Axure", "Card Sorting","Usability Testing"]
+  },
+  {
+    "id": 2,
+    "content-ch": [
+      {
+        "title": "負責內容",
+        "content": [
+          "1. 釐清 HR 在「面試」「報到」階段的痛點",
+          "2. 與 HR 合作主持卡片分類法，重新規劃入職資訊架構",
+          "3. 規劃甄選系統 wireframe，負責 flow mapping 與前端切版",
+          "4. 整理 Figma 設計規範與 Library，建立共用資源",
+          "5. 執行 易用性測試，驗證設計是否符合實際需求"
+        ]
+      },
+      {
+        "highlight-title": "專案成效",
+        "highlight-content": [
+          "協助釐清5種用戶角色與使用流程，打造更清晰的用戶旅程圖",
+          "透過卡片分類法優化新人專區頁面架構，提升資訊可找性與導航效率",
+          "執行易用性測試，成功找出使用痛點並優化設計，減少後期開發改版成本",
+          "建立設計系統元件庫，縮短後續設計與開發對接時程"
+        ]
+      },
+      {
+        "title": "設計流程",
+        "subtitle": "-Step 1｜釐清流程與角色",
+        "content": [
+          "專案涵蓋「甄選網站」「甄選後台」「入職體驗」三大模組，涉及五種角色(人資主管、人資專員、求職者、面試官、用人主管)。初期與 HR 共同盤點線上/線下操作流程，建立完整服務地圖，作為 wireframe 繪製與功能設計依據。"
+        ],
+        "image": "hr1.png"
+      },
+      {
+        "subtitle": "-Step 2｜卡片分類法：資訊架構重整",
+        "content": [
+          "邀請 HR 同仁一同參與實作卡片分類法，將新人入職資訊進行視覺化分類與整理，讓頁面內容更貼近使用者理解邏輯。"
+        ],
+        "image": "hr2.jpg"
+      },
+      {
+        "subtitle": "-Step 3｜線框圖設計",
+        "content": [
+          "根據流程與需求訪談結果，產出灰階 wireframe，便於團隊對於頁面結構與功能配置達成共識。"
+        ],
+        "image": "hr3.png"
+      },
+      {
+        "subtitle": "-Step 4｜易用性測試",
+        "content": [
+          "邀請新進員工及 HR 進行測試，驗證前台與後台是否易用、流程是否順暢，並依據回饋進行調整，減少未來開發修改成本。"
+        ],
+        "image": ""
+      },
+      {
+        "subtitle": "-Step 5｜介面設計與切版",
+        "content": [
+          "根據驗證結果設計最終 UI，並進行 HTML/CSS/JQ 切版，協助工程端順利串接。"
+        ],
+        "video": "hr4.mp4"
+      },
+      {
+        "subtitle": "-Step 6｜收集上線後回饋",
+        "content": [
+          "專案上線後，預計持續追蹤使用者反饋與系統數據，作為日後迭代優化的依據。"
+        ],
+        "image": ""
+      },
+      {
+        "title": "專案挑戰與解法",
+        "subtitle": "-範疇廣大，時間分配困難",
+        "content": [
+          "此專案為期數月，涉及多項子任務。身兼 UR、UX、UI 多重角色，需有效管理時間與任務分配。學習使用 WBS 與每週站立會議追蹤進度，確保不延遲。"
+        ]
+      },
+      {
+        "subtitle": "-如何選擇合適的使用者研究方法？",
+        "content": [
+          "經團隊評估時程與人力資源，最終選擇能快速取得結論且效益高的卡片分類法與易用性測試，在 UI 定稿前找出潛在問題，避免開發後期重工。"
+        ]
+      }
+    ],
+    "content-en": [
+      {
+        "title": "Responsibilities",
+        "content2": [
+          "Clarified the pain points of HR at the 'interview','registration' and 'onboarding' stages",
+          "Cooperated with HR members to host the card sorting and re-design the internal website of onboarding information",
+          "Designed the HR system wireframe, mapped the UX flow and developed front-end website",
+          "Built the design specifications and libraries, organizing shared resources",
+          "Conducted usability testing to verify whether the design meets actual needs"
+        ]
+      },
+      {
+        "highlight-title": "Achievement",
+        "highlight-content": [
+          "Clarified 5 user roles and work processes to create a clearer user journey map",
+          "Built a design system to re-organize the guidelines and UI kits, reducing onboarding time and maintenance cost",
+          "Optimized the structure of the website for the new recruits through card sorting to improve information availability",
+          "Conducted usability testing to find the pain points and optimize the design, reducing the cost of development and revision",
+          "Established a component library to shorten the subsequent design process and development docking time"
+        ]
+      },
+      {
+        "title": "Design process",
+        "subtitle": "Step 1｜Clarifying the user journey and roles",
+        "content": [
+          "The project covers three modules: 'Recruitment website', 'Recruitment internal system' and 'onboarding experience optimization', and five roles (HR manager, HR specialist, candidate, interviewer, hiring manager). At this stage, we worked with HR specialists to review the online/offline workflow and established a comprehensive user journey map as the basis for wireframe."
+        ],
+        "image": "hr1.png"
+      },
+      {
+
+        "subtitle": "Step 2｜Card Sorting: Reorganizing Information Architecture",
+        "content": [
+          "We invited HR colleagues to participate in card sorting to visually classify and organize the information for new recruits, so that the contents of the page could be more friendly to users."
+        ],
+        "image": "hr2.jpg"
+      },
+      {
+        "subtitle": "Step 3｜Wireframe Design",
+        "content": [
+          "Based on the user journey and the results of demand interview, a wireframe was produced to reach a consensus on the information architecture and function."
+        ],
+        "image": "hr3.png"
+      },
+      {
+        "subtitle": "Step 4｜Usability testing",
+        "content": [
+          "We invited new employees and HR specialists to conduct testing to verify whether the new designs were easy to use and whether the process was smooth, and made adjustments based on feedback."
+        ],
+        "image": ""
+      },
+      {
+        "subtitle": "Step 5｜Interface design and layout",
+        "content": [
+          "We designed the final UI based on the results of the aforementioned testings, and coded HTML/CSS/JQ layouts to assist the engineers with the front-end development."
+        ],
+        "video": "hr4.mp4"
+      },
+      {
+        "subtitle": "Step 6｜Collecting feedback after launch",
+        "content": [
+          "After the launch of the project in the future, it is expected that user feedback and some system data will be continuously tracked for future optimization."
+        ],
+        "image": ""
+      },
+      {
+        "title": "Challenges and Solutions",
+        "subtitle": "-Managing time efficiently was challenging due to the scope of the project",
+        "content": [
+          "The design and the development process had cost several months and involved multiple subtasks. As a user researcher and a UX/UI designer, I need to manage time and task allocation efficiently. It's important for me to be familiar with WBS and utilize weekly stand-up meetings to track progress and ensure there are no delays ."
+        ]
+      },
+      {
+        "subtitle": "How to choose the appropriate user research method?",
+        "content": [
+          "After evaluating the project timeline and team capacity, we finally selected the card sorting and usability testing as a main methods, which allowed us to quickly validate our design and uncover potential issues before the UI was finalized, minimizing costly redundancies."
+        ]
+      }
+    ]
+  }
+]

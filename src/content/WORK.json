@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "category": "app",
+    "title-en": "UCB Mobile Banking",
+    "subtitle-en": "Banking in Motion: Designing for Cambodia",
+    "title-ch": "UCB 行動銀行",
+    "subtitle-ch": "行銀設計：打造符合柬埔寨需求的金融體驗",
+    "link": "/works/UCB",
+    "image": "UCB"
+  },
+  {
+    "id": 2,
+    "category": "ux",
+    "title-en": "Recruitment System Redesign",
+    "subtitle-en": "Optimizing recruiting with user-centric approach",
+    "title-ch": "HR人資系統與入職體驗優化",
+    "subtitle-ch": "以使用者為中心，優化招募流程",
+    "link": "/works/HR",
+    "image": "HR"
+  },
+  {
+    "id": 3,
+    "category": "web",
+    "title-en": "Experience Design Center Official Website",
+    "subtitle-en": "Exploring Our Experience Design",
+    "title-ch": "使用者體驗中心官網設計",
+    "subtitle-ch": "揭開使用者體驗中心設計思維",
+    "link": "/works/XDC",
+    "image": "XDC"
+  },
+  {
+    "id": 4,
+    "category": "ux",
+    "title-en": "Price Alert Flow Optimization",
+    "subtitle-en": "A/B testing three flows to find the most intuitive price-alert experience",
+    "title-ch": "股票到價通知動線優化",
+    "subtitle-ch": "三版 A/B 測試：找出最直覺的到價通知動線",
+    "link": "/works/PriceAlert",
+    "image": "PriceAlert"
+  }
+]

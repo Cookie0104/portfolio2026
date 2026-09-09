@@ -1,0 +1,36 @@
+@font-face {
+  font-family: NATS;
+  src: url(font/MADETommySoftRegular.otf);
+}
+html, body {
+  background: #ededed;
+  font-family: "NATS";
+}
+
+.app {
+  font-family: "NATS";
+  background: #ededed;
+}
+
+.contentOuter {
+  width: 80%;
+  max-width: 920px;
+  margin: 0px auto;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .contentOuter {
+    width: calc(100% - 80px);
+    padding: 0px 40px;
+  }
+}
+@media (max-width: 799px) {
+  .contentOuter {
+    width: calc(100% - 48px);
+    padding: 0px 24px;
+  }
+}
+:global html,
+:global body {
+  height: 100%;
+}/*# sourceMappingURL=global.module.css.map */
