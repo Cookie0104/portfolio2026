@@ -3,7 +3,7 @@ import { useLanguage } from "../component/function/languageContext";
 import LinkIcon from "../img/ic-link.svg";
 import RESUME from "../content/RESUME.json";
 
-const RESUME_FILE_ID = "1PVpQwvZ-H4qss995RIqOrRnZ3O-PHK6E";
+const RESUME_FILE_ID = "1B_elt2N6S4zuxkthPQynvvqiLNIudZGP";
 const RESUME_DOWNLOAD_URL = `https://drive.google.com/uc?export=download&id=${RESUME_FILE_ID}`;
 
 const SectionLabel = ({ index, children }) => (
@@ -82,7 +82,7 @@ const Resume = () => {
           <main className={styles.main}>
             <section className={styles.section}>
               <SectionLabel index="01">
-                {language === "English" ? "Summary" : "個人簡介"}
+                {language === "English" ? "About" : "個人簡介"}
               </SectionLabel>
               {RESUME[`summary-${lang}`].map((p, i) => (
                 <p key={i} className={styles.paragraph}>

@@ -26,7 +26,7 @@ const Footer = () => {
           <i></i>
           <i></i>
         </span>
-        2025 © Emily Design
+        2026 © Emily Design
       </div>
     </div>
   );
